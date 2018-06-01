@@ -20,5 +20,5 @@ boot = boot.strength(data = data_normal, R = 100, algorithm="tabu", algorithm.ar
 avg.boot = averaged.network(boot)
 avg.fitted = bn.fit(avg.boot, data = data_normal)
 
-v_bic_net_normal = tabu(data_v_struc, score = 'bic-g', tabu = 11, max.tabu = 11)
+v_bic_net_normal = tabu(data_v_struc, score = 'bic-g', tabu = 10, max.tabu = 10)
 v_bic_fit_normal = bn.fit(v_bic_net_normal, data_v_struc)
